@@ -1,17 +1,17 @@
 #!/bin/python3
 
-#a = "4th Training in "
-#
-#for i in a.lower():
-#	if i in "aeiou":
-#		print(i, "is a vowel")
-#	elif i.isalpha():
-#		print(i, "is a consonant")
-#	elif i.isdigit():
-#		print(i, "is a digit")
-##	else:
-##		print(i, "seems to be a special charecter or white space")
-#print("end of for loop")
+a = "5th Training in Epsilon"
+
+for i in a.lower():
+	if i in "aeiou":
+		print(i, "is a vowel")
+	elif i.isalpha():
+		print(i, "is a consonant")
+	elif i.isdigit():
+		print(i, "is a digit")
+	else:
+		print(i, "seems to be a special charecter or white space")
+print("end of for loop")
 
 #a = "4th Training in "
 #index = 0
