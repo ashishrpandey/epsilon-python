@@ -4,8 +4,8 @@ import os
 print ("Hello world from ", __file__)
 #print (os.environ.get("PATH"))
 
-#for a in os.environ:
-#	print(a, os.environ[a])
+for a in os.environ:
+	print(a, os.environ[a])
 #for i in dir():
 #	print (i)
 import keyword

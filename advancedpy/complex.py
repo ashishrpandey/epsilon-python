@@ -3,7 +3,7 @@ class Complex():
         self.real = real1
         self.img = img1
         print ("I am printing from the constructor", self.real, self.img)
-
+    '''
     def printcomplex(self):
         print (self.real,"+ i",self.img)
     def __add__(self, other):
@@ -12,6 +12,7 @@ class Complex():
         img1 = self.img + other.img
         Z = Complex(real1,img1)
         return Z
+    '''
     def __str__(self):
         # return '%d + i %d' % (self.real, self.img)
         return str(self.real) + '+ i' + str(self.img) 
@@ -23,15 +24,13 @@ class Complex():
 
 X = Complex(3,4)
 Y = Complex(5,6)
+print(X)
 
+
+'''
 X.printcomplex();
 Y.printcomplex();
-
 #print(help(X))
-Z = X + Y
-print(Z)
-
-print(dir(1))
 
 #
 #
@@ -44,7 +43,6 @@ print(dir(1))
 #        return Complex(self.real*other.real - self.img*other.img,
 #                       self.img*other.real + self.real*other.img)
 
-'''
     def distance(self,other):
     def __div__(self, other):
         sr, si, otr, oi = self.real, self.img, \

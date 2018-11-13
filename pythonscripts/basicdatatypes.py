@@ -15,7 +15,7 @@ var2 = 'zeke"Labs'
 #var3 = '''zeke
 #Labs'''
 #print(var1,"\t",var2,var3)
-
+'''
 # Operator
 # +   Concatenation
 # * 
@@ -52,6 +52,7 @@ mystring = "I come from zekeLabs"
 # index 
 i = mystring.index("zeke")
 print(mystring[i:])
+'''
 filepath = "D://Desktop/os/unix/python/files/python/scripts"
 print(len(filepath))
 #i = filepath.index("python", 25)
@@ -60,14 +61,15 @@ i = filepath.find("python")
 #print(filepath.find("python", filepath.find("python")+1))
 #print(i)
 #print(help(filepath.count))
-print (filepath.replace("python","Jython"))
+#print (filepath.replace("python","Jython"))
 
-print(mystring.split())
+#print(mystring.split())
+
 mydirs = filepath.split("/")
 print(mydirs)
+
 print("/".join(mydirs))
 
 #print(help(str.partition))
 
 print(filepath.partition("unix"))
-
