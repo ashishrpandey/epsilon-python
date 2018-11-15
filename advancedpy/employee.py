@@ -9,21 +9,30 @@ class employee():
 
 	def promote(self, designation_arg):
 		self.designation = designation_arg
-
+'''
 a = employee("Nagesh",23)
-a.promote("Director")
+b = employee()
 print(a)
+print(b)
+'''
 
 
 
-
-#a = employee()
-#b = employee("Nagesh1")
-#c = employee("Nagesh2")
-#d = employee("Nagesh3")
-#e = employee("Nagesh4")
+a = employee()
+b = employee("Nagesh1")
+c = employee("Nagesh2")
+d = employee("Nagesh3")
+e = employee("Nagesh4")
 #
-#print(a.name,a.empid)
+print(a.name,a.empid)
+a.name = "Ashish"
+a.empid = 11222
+print(a)
+a.promote("President")
+print(a)
+#print(dir(a))
+print(a.__dict__)
+
 #print(b.name)
 #print(c.name)
 #print(d.name)

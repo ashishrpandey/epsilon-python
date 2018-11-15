@@ -5,13 +5,14 @@ s = "12-02-2018"
 # dd-mm-yyyy
 r = re.compile(r"^([0-9]{2})-([0-9]{2})-([0-9]{4})$")
 # # l = re.findall(r,s)
-# # print(l)
+'''# # print(l)
 m = re.search(r,s)
 print(m)
 if m:
-	print(m.group(2))
+	print(m.group())
 else:
  	print("pattern not found")
+'''
 #Search returns a object of call match if pattern found 
 # else None 
 
@@ -20,14 +21,13 @@ s1 = "(+91)7123456789"
 
 # l = re.findall("[A-Za-z]+[0-9]?","Python")
 # print(l)
-
+'''
 r = re.compile(r"^(\(\+91\))?[6-9][0-9]{9}$")
 m = re.search(r,s1)
 if m:
  	print(m.group())
 else:
  	print("Pattern not found")
-
 
 # url = "www.zekelabs.com"
 
@@ -63,17 +63,20 @@ r = re.compile(r"^(?P<day>[0-9]{2})-(?P<month>[0-9]{2})-(?P<year>[0-9]{4})$")
 # Search returns a object of call match if pattern found 
 # else None 
 
+'''
 
 s = "(+91)7123456789"
 # s1 = "7123456789"
 
-l = re.findall("[A-Za-z]+[0-9]?","Python")
-print(l)
+#l = re.findall("[A-Za-z]+[0-9]?","Python")
+#print(l)
 
 
 r = re.compile(r"^(?:\(\+91\))?([6-9]\d{9})$")
 m = re.search(r,s)
 if m:
+	print(m.group())
+	print(m.group(0))
 	print(m.group(1))
 else:
 	print("Pattern not found")

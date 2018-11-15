@@ -23,7 +23,11 @@ s = "abcdabddacacadede"
 # l = re.findall(r,s)
 # print(l)
 
-s = "AAAAAABCDE1234A"
-r = re.compile("^[A-Z]{5}[0-9]{4}[A-Z]$")
+s = "AAABCDE134AFGFH242D"
+r = re.compile("[A-Z]{2}[0-9]{3}[A-Z]")
+
+#fileobj = open("filename.log","r")
+#l = re.findall(r,fileobj.read())
 l = re.findall(r,s)
+
 print(l)

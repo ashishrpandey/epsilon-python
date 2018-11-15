@@ -2,14 +2,10 @@
 l2 = [value * value for value in l1]
 print(l2)
 
-l2 = [10,20,30,40,50]
-l3 = [value + value1 for value,value1 in zip(l,l1)]
-print(l3)
 # map 
 def sqr(num1):
 #     print(num1)
     return num1 * num1 
-    
 
 l = [10,20,30,40,50,60]
 m = list(map(sqr,l))

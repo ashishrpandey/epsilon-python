@@ -1,12 +1,13 @@
 #exceptions:
-'''
 a = [1]
+b = "ashish"
 try :
-	print(a)
-	raise (NameError) 
+	assert( b == "Ashish")
+	#if (b != "Ashish"):
+	#	raise ValueError;
 
-except NameError:
-	print('this is a name error')
+#except NameError:
+#	print('this is a name error')
 
 except ValueError:
 	print ('this is a value error')
@@ -22,13 +23,13 @@ else:
 finally:
 	print ('this is finally: will be printed everytime')
 #assertion
+'''
 def func(a,b):
 	assert b != 0
 	print(a/b)
 #	print (a)
 
 func(2,1)
-'''
 # creating your own exception
 
 class myException(RuntimeError):
@@ -46,3 +47,4 @@ try:
 except myException as e :
 	print("raised an exception with value = ", e.arg)
 
+'''
