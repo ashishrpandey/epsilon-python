@@ -2,6 +2,7 @@
 import MySQLdb
 
 # Open database connection
+# connect(<endpoint of RDS>, <dbusername>,<password>,<dbname>)
 db = MySQLdb.connect("zekeinstance.cra1n4auudcc.ap-southeast-1.rds.amazonaws.com","test","epsilon123","zekelabs")
 
 # prepare a cursor object using cursor() method
